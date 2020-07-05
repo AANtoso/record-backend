@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+hypertension = Diagnosis.create(name: "Hypertension")
+diabetes type one = Diagnosis.create(name: "Diabetes Type One")
+hypothyroidism = Diagnosis.create(name: "Hyperthyroidism")
+anxiety = Diagnosis.create(name: "Anxiety")
+anemia = Diagnosis.create(name: "Anemia")
+seasonal allergies = Diagnosis.create(name: "Seasonal Allergies")
