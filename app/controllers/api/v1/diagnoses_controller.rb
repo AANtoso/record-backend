@@ -1,7 +1,7 @@
 class Api::V1::DiagnosesController < ApplicationController
     def index
         @diagnoses = Diagnosis.all 
-        render json: @diagnosis 
+        render json: @diagnoses 
     end
 
     def show
