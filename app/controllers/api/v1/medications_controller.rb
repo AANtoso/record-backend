@@ -27,6 +27,7 @@ class Api::V1::MedicationsController < ApplicationController
         if params[:diagnosis_id]
             @diagnosis = Diagnosis.find(params[:diagnosis_id])
             @medication = @diagnosis.medications.find(params[:id])
+            # binding.pry
             @medication.destroy
             render json: {
                 message: "Successfully deleted medication"
