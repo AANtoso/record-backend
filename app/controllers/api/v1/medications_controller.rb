@@ -30,6 +30,7 @@ class Api::V1::MedicationsController < ApplicationController
             # binding.pry
             @medication.destroy
             render json: {
+                medication: @medication,
                 message: "Successfully deleted medication!"
             }
         end
