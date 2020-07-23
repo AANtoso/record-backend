@@ -1,7 +1,5 @@
 class Api::V1::MedicationsController < ApplicationController
 
-    # before_action: set_diagnosis
-
     def index
         @medications = @diagnosis.medications 
         render json: @medications
@@ -27,7 +25,6 @@ class Api::V1::MedicationsController < ApplicationController
         if params[:diagnosis_id]
             @diagnosis = Diagnosis.find(params[:diagnosis_id])
             @medication = @diagnosis.medications.find(params[:id])
-            # binding.pry
             @medication.destroy
             render json: {
                 medication: @medication,
@@ -38,9 +35,6 @@ class Api::V1::MedicationsController < ApplicationController
 
     private
 
-    # def set_diagnosis
-    #     @diagnosis = Diagnosis.find(params[:diagnosis_id])
-    # end
 
     def medication_params
         params.require(:medication).permit(:name, :dose, :frequency, :diagnosis_id, :called_in)
