@@ -1,4 +1,4 @@
-# HealthRecord (frontend)
+# HealthRecord (backend)
 
 ## Overview
 Keeping track if your diagnoses and the medications that are associated with them can be an exhausting and tasking procedure! This application allows the user to save different medications, associating them with the diagnosis that they are being taken to treat.
